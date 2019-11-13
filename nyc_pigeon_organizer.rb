@@ -18,7 +18,7 @@ def nyc_pigeon_organizer(pigeon_original_data)
   pigeon_data_restructured
 end
 
-pigeon_data = {
+pigeon_list = {
   :color => {
     :purple => ["Theo", "Peter Jr.", "Lucky"],
     :grey => ["Theo", "Peter Jr.", "Ms. K"],
@@ -37,4 +37,4 @@ pigeon_data = {
   }
 }
 
-p nyc_pigeon_organizer(pigeon_data)
+p nyc_pigeon_organizer(pigeon_list)
