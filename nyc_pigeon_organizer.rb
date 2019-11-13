@@ -6,7 +6,7 @@ def nyc_pigeon_organizer(pigeon_original_data)
         #if pigeon_data_restructured[name] == nil
         #  pigeon_data_restructured[name] = {}
         #end
-        pigeon_data_restructured = {} if pigeon_data_restructured==nil
+        pigeon_data_restructured[name] = {} if pigeon_data_restructured[name]==nil
         if pigeon_data_restructured[name][first_level_keys] == nil
           pigeon_data_restructured[name][first_level_keys] = []
         end
