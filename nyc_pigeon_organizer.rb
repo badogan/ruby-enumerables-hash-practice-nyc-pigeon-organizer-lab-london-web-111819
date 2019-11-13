@@ -3,9 +3,10 @@ def nyc_pigeon_organizer(pigeon_original_data)
   pigeon_original_data.each do |first_level_keys, others|
     others.each do |second_level_keys, arrays_filled_with_pigeons|
       arrays_filled_with_pigeons.each do |name|
-        if pigeon_data_restructured[name] == nil
-          pigeon_data_restructured[name] = {}
-        end
+        #if pigeon_data_restructured[name] == nil
+        #  pigeon_data_restructured[name] = {}
+        #end
+        pigeon_data_restructured = {} if pigeon_data_restructured==nil
         if pigeon_data_restructured[name][first_level_keys] == nil
           pigeon_data_restructured[name][first_level_keys] = []
         end
